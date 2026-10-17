@@ -1,0 +1,16 @@
+{
+  "name": "akor",
+  "version": "0.1.0",
+  "mode": "read_only_preflight",
+  "source": "Ekole_Pont_Missions_v4_1",
+  "source_snapshot_date": "2026-10-17",
+  "target_repositories": [
+    "ekole",
+    "ekole-quebec",
+    "Kontexte",
+    "kompose",
+    "Orgo",
+    "Orgo_Worlds"
+  ],
+  "no_live_mission": true
+}

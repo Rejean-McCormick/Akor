@@ -1,0 +1,15 @@
+# Akor-generated reviews and caches
+/output/
+/__pycache__/
+**/__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+.coverage
+build/
+dist/
+# Ignore optional local source checkouts, never commit child data or token files.
+*.env
+.env
+local-sources/
