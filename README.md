@@ -69,6 +69,15 @@ The existing `Ekole_Pont_Missions_v4_1` precursor is a **read-only prequalificat
 
 This repository now includes a working read-only preflight CLI, unit tests, source-boundary checks, a Windows launcher, and an English wiki. Live service interfaces, classroom authentication, mission lifecycle integration, and end-to-end collaborative tests have **not** been implemented or qualified.
 
+## Tandem Education — implemented synthetic stages P2 and P3 (2026-10-27)
+
+Beyond the P1 read-only handoff below, the repository contains two **local, non-authoritative** stages:
+
+- **P2 — review intent only:** `src/akor/tandem_intent.py` and `run_akor_tandem_intent.py` check the Kontexte/Kompose/Ekole handoff and produce a synthetic review intention. See [`docs/TANDEM_EDUCATION_P2_REVIEW_ONLY.md`](docs/TANDEM_EDUCATION_P2_REVIEW_ONLY.md) and `tests/test_tandem_intent.py`.
+- **P3 — untrusted authority request only:** `src/akor/tandem_authority_request.py` validates a request envelope derived from P2, preserving `AWAITING_SERVER_VERIFICATION` and **false** authority flags. See [`docs/TANDEM_EDUCATION_P3_AUTHORITY_REQUEST.md`](docs/TANDEM_EDUCATION_P3_AUTHORITY_REQUEST.md) and `tests/test_tandem_authority_request.py`. The P2 hash is an integrity reference, **not a signature or authorization**.
+
+These modules are implemented in source; this document does **not** claim that cross-system end-to-end tests were rerun here. Neither P2 nor P3 grants teacher approval, student identity, enrollment, WorldRelease admission, Orgo task/session creation, publishing, or live classroom operation. The receiving authoritative server must verify those boundaries before any future execution.
+
 ## Development roadmap
 
 1. **Foundation (started):** Maintain this standalone `akor` repository, pin source versions, define contracts, and preserve the read-only review flow.
