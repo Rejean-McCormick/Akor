@@ -1,0 +1,17 @@
+{
+  "id": "akor_tandem_education_p22_chain_cmd",
+  "title": "AKOR / TANDEM EDUCATION / P2.2 / WINDOWS CHAIN CMD",
+  "sentinel": "src/akor/preflight.py",
+  "anchors": {
+    "tools/tandem_education_p21/manifest.json": "2b51ad1130bc28e3f0507b905469f78ff35ae08fb2c4e026a705a8729091d411",
+    "tools/tandem_education_p21/cross_repo_check.py": "b63e2eb3f3fbdc5e22a1a107f9c33f4cacf546dd62ce4f17df681b67f714db74",
+    "tools/tandem_education_p2/manager.py": "6700f94d670bbd03978da0496a6d97b01a50a5d5b6f002ecd4ffc457f57f7a1c"
+  },
+  "files": [
+    {
+      "path": "CHECK_TANDEM_EDU_P2_CHAIN.cmd",
+      "old": "73d3665eb5f20c4b49b07a73152aa9a2309d8e1586bc2210549a57f92dc433d1",
+      "new": "9ca9f04c5bddcfc61ca0e85a0b199ce2d7a3f63a862ee5c324b88a8616d2775e"
+    }
+  ]
+}

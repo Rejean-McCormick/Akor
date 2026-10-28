@@ -1,0 +1,58 @@
+{
+  "id": "akor_tandem_interop_security_p1",
+  "title": "AKOR / TANDEM / KONTEXTE+KOMPOSE+EKOLE / INTEROP+SECURITY / P1",
+  "sentinel": "src/akor/preflight.py",
+  "test_copy": [
+    "README.md",
+    "run_akor.py",
+    "run_akor_tandem.py",
+    "src",
+    "tests",
+    "docs/TANDEM_AKOR_INTEROP_SECURITY_P1.md"
+  ],
+  "commands": [
+    [
+      "-m",
+      "compileall",
+      "-q",
+      "src",
+      "tests",
+      "run_akor_tandem.py"
+    ],
+    [
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-q"
+    ]
+  ],
+  "entries": [
+    {
+      "path": "README.md",
+      "old": "8d806df792b1c2d9a21ae87fdf45dbc216ad1b21d076f78e3dc091959310ef5c",
+      "new": "30d371e921d5460bf79f107970ae7827d85245e2a9e28ac386ecbd124bb5c358"
+    },
+    {
+      "path": "run_akor_tandem.py",
+      "old": null,
+      "new": "4cba08c78d13166689f0e4ad589c8811a9aa4faf8960daafc3d717825573437d"
+    },
+    {
+      "path": "src/akor/tandem_gate.py",
+      "old": null,
+      "new": "3bee7110e8d765b9c5ebcec68bdf657a97315fa008ac977e9463a3ee6777c132"
+    },
+    {
+      "path": "tests/test_tandem_gate.py",
+      "old": null,
+      "new": "081090fe1f0228848eb28f5ff6b892876bb3d1d9154141e695913e077e0bc8be"
+    },
+    {
+      "path": "docs/TANDEM_AKOR_INTEROP_SECURITY_P1.md",
+      "old": null,
+      "new": "4cf2ade30fe905efbc49175c0da410f0bcce561c6f3eaa0e6c667edbc5593ce4"
+    }
+  ]
+}

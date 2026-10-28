@@ -106,3 +106,9 @@ For the full guide, read [Development and local usage](docs/DEVELOPMENT.md), [Pr
 ## Guiding principle
 
 **Akor connects systems so children can connect with one another.**
+
+## Tandem 1.0 synthetic handoff (P1)
+
+Akor also offers an **independent read-only integration check** for the reviewed Kontexte -> Kompose -> Ekole synthetic preview, with **Orgo remaining the sole live operational authority**. This is **not** a second compiler or a classroom authorization. The existing bakery preflight remains available as a legacy, non-publishing review workflow.
+
+See [Tandem Akor interop/security P1](docs/TANDEM_AKOR_INTEROP_SECURITY_P1.md) for the Windows command and scope limitations.

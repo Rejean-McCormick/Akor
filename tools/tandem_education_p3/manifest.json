@@ -1,0 +1,52 @@
+{
+  "id": "akor_tandem_education_p3",
+  "title": "AKOR / TANDEM EDUCATION / P3 AUTHORITY REQUEST",
+  "sentinel": "src/akor/preflight.py",
+  "anchors": {
+    "src/akor/tandem_intent.py": "276dc6be90b08bda77140d8d23953151c9ffbf0dbe7397205da3e4a790bdcf45"
+  },
+  "files": [
+    {
+      "path": "src/akor/tandem_authority_request.py",
+      "old": null,
+      "new": "a0731690cc254a66995fd2136f8ad4e6ea84cc2d84dc59515de8863801d83b22"
+    },
+    {
+      "path": "tests/test_tandem_authority_request.py",
+      "old": null,
+      "new": "2559c3044f8754e4ab64ffaf0911895f4343c33e8ffbb1545dc3fd3a559334f2"
+    },
+    {
+      "path": "docs/TANDEM_EDUCATION_P3_AUTHORITY_REQUEST.md",
+      "old": null,
+      "new": "037c96d0a671948b6fe4b4f28c6bf5f19c4d05fe8c3a1bb10fff6171601c9ba3"
+    }
+  ],
+  "copy": [
+    "src",
+    "tests",
+    "examples",
+    "docs",
+    "README.md",
+    "run_akor_tandem.py",
+    "run_akor_tandem_intent.py",
+    "run_akor.py"
+  ],
+  "tests": [
+    [
+      "{PYTHON}",
+      "-m",
+      "py_compile",
+      "src/akor/tandem_authority_request.py"
+    ],
+    [
+      "{PYTHON}",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-q"
+    ]
+  ]
+}
