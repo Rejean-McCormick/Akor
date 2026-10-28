@@ -43,9 +43,31 @@ Verify instructions suitable for the age, communication alternatives, keyboard n
 | 9 | Accessibility | Keyboard, mobile, readable instructions and communication alternative |
 | 10 | Failure/rollback | Reproducible test run, logs without child secrets, safe degradation |
 
-## Current test evidence
+## Tests present in the October 27 Akor source snapshot
 
-The prequalification bridge reported **six local tests passing**, while Kontexte and kompose reported their own isolated test suites. Orgo's Scenario Injector `validate` and `plan` passed for a **synthetic preparation** fixture; no production apply, multi-student session or fully integrated Playwright test was performed. The 11 successful Ekole Playwright checks were for Ekole v4 functionality, not Akor's future collaboration.
+The repository now contains `tests/test_akor.py`, `tests/test_tandem_gate.py`,
+`tests/test_tandem_intent.py` and `tests/test_tandem_authority_request.py`.
+These cover the standalone read-only preflight, synthetic interop gates,
+P2 review intentions and P3 **untrusted** authority-request envelopes.
+P3 explicitly remains `AWAITING_SERVER_VERIFICATION`: source presence or a
+passing unit test **does not** authorize a teacher, student, Orgo task or
+classroom mission.
+
+`TEST_RESULTS.md` is a **historical test report for the initial preflight**:
+13 passing tests were reported with six sibling source trees, versus 6
+passing and 7 skipped when run without siblings. These counts must **not**
+be represented as a fresh test run of the newer P2/P3 implementation.
+The `Test Results` page and the current test suite should be rerun and
+reported independently for a new evidence date.
+
+There is still no demonstrated end-to-end authenticated multi-child
+classroom run, teacher-controlled Orgo admission, fragment isolation or
+Playwright evidence for the acceptance table above.
+
+## Historical prequalification evidence (October 17)
+
+
+An earlier prequalification bridge reported **six local tests passing**, while Kontexte and kompose reported their own isolated test suites. Orgo's Scenario Injector `validate` and `plan` passed for a **synthetic preparation** fixture; no production apply, multi-student session or fully integrated Playwright test was performed. The 11 successful Ekole Playwright checks were for Ekole v4 functionality, not Akor's future collaboration.
 
 Do not mark the table above complete because a static role preview exists.
 

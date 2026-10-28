@@ -1,5 +1,8 @@
 # Akor — Learning in Concert
 
+**Code snapshot status (October 27, 2026):** P2 synthetic review intents and P3 untrusted authority requests exist in source, but neither grants runtime admission or starts a classroom mission. See [Source-verified code status — October 27, 2026](Code-Status-2026-10-27) for source evidence and limitations.
+
+
 > **Akor brings children into accord through shared missions: different roles, meaningful interactions, a common purpose.**
 
 Akor is the proposed collaboration and integration layer connecting **Kontexte**, **kompose**, **Orgo**, **Orgo_Worlds**, and **Ekole**. Its name evokes *accord*: not just agreement between software components, but the way children listen, exchange information, negotiate, help one another, and create something together.
@@ -54,12 +57,16 @@ This diagram describes **target responsibilities**, not a production deployment.
 - **A graceful alternative:** solo mode, absent partners, different pacing, and recovery do not punish learners.
 - **Separate evidence:** mission completion is not automatically subject mastery.
 
-## Current reality (October 17, 2026)
+## Historical context (October 17, 2026)
 
-Akor is **named and documented, not yet implemented as a standalone production repository**. The existing `Ekole_Pont_Missions_v4_1` prototype qualifies real Kontexte/kompose inputs and validates a synthetic Orgo preparation fixture **without writing to Orgo**. No authenticated multi-child experience has been delivered by this bridge. The bakery scenario remains a synthetic draft needing pedagogical review.
+At that checkpoint, Akor was **named and documented, but not implemented as a standalone production product**. The separate source repository and its P2/P3 synthetic capabilities are described in the [October 27 code status](Code-Status-2026-10-27). The existing `Ekole_Pont_Missions_v4_1` prototype qualifies real Kontexte/kompose inputs and validates a synthetic Orgo preparation fixture **without writing to Orgo**. No authenticated multi-child experience has been delivered by this bridge. The bakery scenario remains a synthetic draft needing pedagogical review.
 
 See [Project Status](Project-Status) for a strictly separated *implemented / demonstrated / proposed* inventory.
 
 ---
 
 **Akor principle:** *Children do not need to do the same thing to learn together. Their contributions must matter to one another.*
+
+## Contrôle des intégrations (27 octobre 2026)
+
+Voir [[Integration-Verification-2026-10-27]] pour les versions et frontières des dépôts satellites, avec preuves et limites.

@@ -1,6 +1,13 @@
 # Project Status
 
-**Baseline: October 17, 2026.** This page is deliberately explicit about what has actually been demonstrated. Akor is a **proposed new repository name**, not a completed product.
+## October 27, 2026 — source-verified update
+
+The older sections below are retained for context; read the current code-backed checkpoint: [Source-verified code status — October 27, 2026](Code-Status-2026-10-27).
+
+**P2 synthetic review intents and P3 untrusted authority requests exist in source, but neither grants runtime admission or starts a classroom mission.**
+
+
+**Historical baseline: October 17, 2026.** Akor now exists as a dedicated repository. The P2/P3 source checkpoint above supersedes this historical table where newer functionality is described; Akor remains not a completed live classroom product.
 
 ## Demonstrated in supplied sources or the local prequalification bundle
 
