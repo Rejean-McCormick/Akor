@@ -29,6 +29,16 @@ def load_teacher_preview(path):
   v=json.loads(p.read_text('utf-8'),object_pairs_hook=pairs)
   if set(v)!={'format','mode','authority','tenant_id','world_id','world_release_id','scenario_ref','workflow_ref','tasks'} or v['mode']!='synthetic': raise ValueError('untrusted')
   return v
+def verify_initial_design_preview(preview, mission):
+  steps=mission['steps']
+  if len(steps)!=len(preview['tasks']):raise ValueError('length')
+  seen=set()
+  for step,task in zip(steps,preview['tasks']):
+    deps=step['depends_on']
+    if any(x not in seen for x in deps):raise ValueError('dependency')
+    if task['task_ref']!=step['id'] or task['role_code']!=step['role'] or task['fragment_refs'] or task['state']!=('waiting' if deps else 'ready'):raise ValueError('initial state')
+    seen.add(step['id'])
+  return {'initial_state_checked':True,'dispatch_allowed':False}
 """
 EK="""def validate_synthetic_preview(v):
   if v['format']!='ekole.tandem-teacher-preview/1.0' or v['authority']!='orgo':raise ValueError('format')
@@ -48,7 +58,8 @@ class TandemGateTests(unittest.TestCase):
         self.mission_file=self.ko/'data/missions/fete-sorciere.json'
         self.mission_file.parent.mkdir(parents=True)
         self.mission={'id':'fete-sorciere','format':'kontexte.mission/1','synthetic':True,
-                      'steps':[{'id':'step-one','role':'sorciere'},{'id':'step-two','role':'marchand'}],
+                      'safety':{'real_spending':False,'real_taxes':False,'publication_default':'private'},
+                      'steps':[{'id':'step-one','role':'sorciere','depends_on':[]},{'id':'step-two','role':'marchand','depends_on':[]}],
                       'fragments':[{'content':{'fr-CA':'ne jamais publier cet indice'}}]}
         self.document={'format':'ekole.tandem-teacher-preview/1.0','mode':'synthetic','authority':'orgo',
                        'tenant_id':TENANT,'world_id':WORLD,'world_release_id':RELEASE,
@@ -92,6 +103,16 @@ class TandemGateTests(unittest.TestCase):
         self.document['tasks'][0]['student_name']='fictional pupil'
         self.write()
         with self.assertRaises(GateError): self.verify()
+
+    def test_forged_done_state_rejected_against_source(self):
+        self.document['tasks'][0]['state']='done'
+        self.write()
+        with self.assertRaises(GateError):self.verify()
+
+    def test_unreviewed_fragment_ref_rejected(self):
+        self.document['tasks'][0]['fragment_refs']=['secret-clue']
+        self.write()
+        with self.assertRaises(GateError):self.verify()
 
     def test_non_synthetic_source_rejected(self):
         self.mission['synthetic']=False;self.write()

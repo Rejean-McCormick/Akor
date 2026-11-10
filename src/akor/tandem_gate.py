@@ -101,6 +101,12 @@ def verify_handoff(*, kontexte: Path, kompose: Path, ekole: Path,
     mission = _json(source)
     if mission.get('id') != scenario_ref or mission.get('format') != 'kontexte.mission/1' or mission.get('synthetic') is not True:
         raise GateError('Scenario source absent, non synthetique ou divergent')
+    try:
+        design_proof = km.verify_initial_design_preview(document, mission)
+    except Exception as exc:
+        raise GateError('État initial Kontexte / Ekole non conforme: ' + type(exc).__name__) from exc
+    if design_proof.get('initial_state_checked') is not True or design_proof.get('dispatch_allowed') is not False:
+        raise GateError('Validation source non concluante')
     steps = mission.get('steps')
     if not isinstance(steps,list) or len(steps) != len(document['tasks']):
         raise GateError('Liste de missions incompatible avec le scenario Kontexte')

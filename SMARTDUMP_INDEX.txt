@@ -1,0 +1,126 @@
+SMART DUMPER INDEX
+==================
+generated_at: 2026-11-09T16:33:39.034804
+source_root: C:\mycode\Ekole\Akor\Akor
+mode: snapshot
+zip_file: Akor_Code_snapshot.zip
+embedded_index: SMARTDUMP_INDEX.txt
+file_count: 113
+total_bytes: 256134
+compression: ZIP_DEFLATED level 1
+
+FILES
+-----
+.github/workflows/test.yml	524 bytes
+.gitignore	276 bytes
+AKOR_BUILD.json	309 bytes
+CHANGELOG.md	459 bytes
+CHECK_TANDEM_EDU_P2_CHAIN.cmd	1196 bytes
+CONTRIBUTING.md	713 bytes
+docs/DEVELOPMENT.md	1744 bytes
+docs/Integration-Verification-2026-10-27.md	1644 bytes
+docs/PROVENANCE.md	978 bytes
+docs/STATUS.md	1878 bytes
+docs/TANDEM_AKOR_INTEROP_SECURITY_P1.md	3061 bytes
+docs/TANDEM_EDUCATION_P2_REVIEW_ONLY.md	1304 bytes
+docs/TANDEM_EDUCATION_P3_AUTHORITY_REQUEST.md	1056 bytes
+docs/wiki/_Footer.md	340 bytes
+docs/wiki/_Sidebar.md	1214 bytes
+docs/wiki/Accessibility-and-Inclusion.md	2403 bytes
+docs/wiki/Architecture-and-Ownership.md	6055 bytes
+docs/wiki/Code-Status-2026-10-27.md	1612 bytes
+docs/wiki/Collaborative-Learning-Principles.md	3709 bytes
+docs/wiki/Contributing.md	1494 bytes
+docs/wiki/FAQ.md	2337 bytes
+docs/wiki/Getting-Started.md	2683 bytes
+docs/wiki/Glossary.md	2160 bytes
+docs/wiki/Home.md	5325 bytes
+docs/wiki/Information-Sharing-and-Joins.md	2500 bytes
+docs/wiki/Integration-Contracts.md	4561 bytes
+docs/wiki/Integration-Verification-2026-10-27.md	1644 bytes
+docs/wiki/Learner-Experience.md	3269 bytes
+docs/wiki/Learning-Evidence.md	2187 bytes
+docs/wiki/Mission-Lifecycle.md	2710 bytes
+docs/wiki/Open-Decisions.md	1930 bytes
+docs/wiki/Privacy-and-Safety.md	3311 bytes
+docs/wiki/Project-Status.md	4089 bytes
+docs/wiki/Roadmap.md	3128 bytes
+docs/wiki/Roles-and-Social-Interactions.md	2971 bytes
+docs/wiki/Source-References.md	2419 bytes
+docs/wiki/Teacher-Experience.md	2100 bytes
+docs/wiki/Testing-and-Acceptance.md	5166 bytes
+docs/wiki/Village-Bakery-Walkthrough.md	4269 bytes
+docs/wiki/Vision-and-Name.md	3363 bytes
+examples/sample_review/REPORT.md	1587 bytes
+examples/sample_review/TEACHER_REVIEW.html	2819 bytes
+examples/tandem/fete-sorciere.11-tasks.intent.synthetic.json	1551 bytes
+INSTALL_AKOR_TANDEM_INTEROP_P1.cmd	263 bytes
+INSTALL_AKOR_TANDEM_P21.cmd	318 bytes
+INSTALL_AKOR_TANDEM_P22_CHAIN_WINDOWS.cmd	261 bytes
+INSTALL_TANDEM_EDU_P2_AKOR.cmd	312 bytes
+INSTALL_TANDEM_EDU_P3_AKOR.cmd	92 bytes
+LANCER_REVUE_AKOR.bat	479 bytes
+PREVIEW_AKOR_TANDEM_INTEROP_P1.cmd	263 bytes
+PREVIEW_AKOR_TANDEM_P21.cmd	318 bytes
+PREVIEW_AKOR_TANDEM_P22_CHAIN_WINDOWS.cmd	261 bytes
+PREVIEW_TANDEM_EDU_P2_AKOR.cmd	312 bytes
+PREVIEW_TANDEM_EDU_P3_AKOR.cmd	92 bytes
+pyproject.toml	538 bytes
+README.md	9092 bytes
+README_AKOR_TANDEM_INTEROP_SECURITY_P1.md	877 bytes
+README_AKOR_TANDEM_P21.md	1255 bytes
+README_AKOR_TANDEM_P22_CHAIN_WINDOWS.md	1227 bytes
+README_TANDEM_EDU_P2_AKOR.md	836 bytes
+README_TANDEM_EDU_P3.md	669 bytes
+REPOSITORY_DESCRIPTION.txt	264 bytes
+ROLLBACK_AKOR_TANDEM_INTEROP_P1.cmd	264 bytes
+ROLLBACK_AKOR_TANDEM_P21.cmd	321 bytes
+ROLLBACK_AKOR_TANDEM_P22_CHAIN_WINDOWS.cmd	263 bytes
+ROLLBACK_TANDEM_EDU_P2_AKOR.cmd	314 bytes
+ROLLBACK_TANDEM_EDU_P3_AKOR.cmd	93 bytes
+run_akor.py	286 bytes
+run_akor_tandem.py	288 bytes
+run_akor_tandem_intent.py	276 bytes
+src/akor/__init__.py	289 bytes
+src/akor/__main__.py	142 bytes
+src/akor/preflight.py	12443 bytes
+src/akor/tandem_authority_request.py	3857 bytes
+src/akor/tandem_gate.py	6398 bytes
+src/akor/tandem_intent.py	3174 bytes
+TEST_RESULTS.md	1448 bytes
+TESTER_AKOR.bat	283 bytes
+tests/test_akor.py	6510 bytes
+tests/test_tandem_authority_request.py	2472 bytes
+tests/test_tandem_gate.py	6511 bytes
+tests/test_tandem_intent.py	1766 bytes
+tools/akor_tandem_interop_security_p1/installer.py	8414 bytes
+tools/akor_tandem_interop_security_p1/manifest.json	1392 bytes
+tools/akor_tandem_interop_security_p1/payload/docs/TANDEM_AKOR_INTEROP_SECURITY_P1.md	3061 bytes
+tools/akor_tandem_interop_security_p1/payload/README.md	7528 bytes
+tools/akor_tandem_interop_security_p1/payload/run_akor_tandem.py	288 bytes
+tools/akor_tandem_interop_security_p1/payload/src/akor/tandem_gate.py	6398 bytes
+tools/akor_tandem_interop_security_p1/payload/tests/test_tandem_gate.py	6511 bytes
+tools/tandem_education_p2/manager.py	7590 bytes
+tools/tandem_education_p2/manifest.json	1776 bytes
+tools/tandem_education_p2/payload/docs/TANDEM_EDUCATION_P2_REVIEW_ONLY.md	1304 bytes
+tools/tandem_education_p2/payload/examples/tandem/fete-sorciere.11-tasks.intent.synthetic.json	1551 bytes
+tools/tandem_education_p2/payload/run_akor_tandem_intent.py	276 bytes
+tools/tandem_education_p2/payload/src/akor/tandem_intent.py	3174 bytes
+tools/tandem_education_p2/payload/tests/test_tandem_intent.py	1766 bytes
+tools/tandem_education_p21/cross_repo_check.py	4609 bytes
+tools/tandem_education_p21/manager.py	7970 bytes
+tools/tandem_education_p21/manifest.json	1081 bytes
+tools/tandem_education_p21/payload/tools/tandem_education_p2/manifest.json	1776 bytes
+tools/tandem_education_p22/manager.py	6197 bytes
+tools/tandem_education_p22/manifest.json	761 bytes
+tools/tandem_education_p22/payload/CHECK_TANDEM_EDU_P2_CHAIN.cmd	1196 bytes
+tools/tandem_education_p3/manager.py	6528 bytes
+tools/tandem_education_p3/manifest.json	1190 bytes
+tools/tandem_education_p3/payload/docs/TANDEM_EDUCATION_P3_AUTHORITY_REQUEST.md	1056 bytes
+tools/tandem_education_p3/payload/src/akor/tandem_authority_request.py	3857 bytes
+tools/tandem_education_p3/payload/tests/test_tandem_authority_request.py	2472 bytes
+VERIFY_AKOR_TANDEM_INTEROP_P1.cmd	262 bytes
+VERIFY_AKOR_TANDEM_P21.cmd	315 bytes
+VERIFY_AKOR_TANDEM_P22_CHAIN_WINDOWS.cmd	259 bytes
+VERIFY_TANDEM_EDU_P2_AKOR.cmd	310 bytes
+VERIFY_TANDEM_EDU_P3_AKOR.cmd	91 bytes
